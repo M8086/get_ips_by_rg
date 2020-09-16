@@ -9,6 +9,7 @@ from azure.mgmt.network import NetworkManagementClient
 
 from msrestazure.azure_exceptions import CloudError
 
+# Supply the Azure Resource Group name here
 RG_NAME=""
 
 # You will want to supply the values in this function as environment variables
