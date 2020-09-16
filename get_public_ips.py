@@ -4,7 +4,6 @@ import os
 import traceback
 
 from azure.common.credentials import ServicePrincipalCredentials
-from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.network import NetworkManagementClient
 
 from msrestazure.azure_exceptions import CloudError
