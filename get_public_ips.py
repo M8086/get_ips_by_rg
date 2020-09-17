@@ -8,7 +8,7 @@ from azure.mgmt.network import NetworkManagementClient
 
 from msrestazure.azure_exceptions import CloudError
 
-RG_NAME="upskill-challenge"
+RG_NAME=""
 
 # You will want to supply the values in this function as environment variables
 def get_credentials():
