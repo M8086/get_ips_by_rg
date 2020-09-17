@@ -27,9 +27,7 @@ def get_public_ips_by_rg():
     try:
         print(f'Getting pulbic IPs in Resource Group {RG_NAME}')
         public_ips = network_client.public_ip_addresses.list(RG_NAME)
-        ip_iter = iter(public_ips.__iter__())
-
-        for ip in ip_iter:
+        for ip in public_ips:
             print(f'{ip.ip_address}')
     except CloudError:
         print('Could not get the public IPs:\n{}'.format(traceback.format_exc()))
